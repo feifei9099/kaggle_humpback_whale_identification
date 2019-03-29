@@ -23,7 +23,7 @@ Heavily based on [Whale Recognition Model with score 0.78563](https://www.kaggle
 + Epochs: `400 or more`
 + Batch size: `32`
 ### Prediction
-+ Threshold: `0.99 and 0.94 with bootstrapping`
++ Threshold: `0.9999 with bootstrapping`
 + TTA number: `4`
 + TTA augmentaion: `random slight: (rotation, shear, height_zoom, width_zoom, height_shift, width_shift)`
 ### Result
@@ -97,13 +97,13 @@ out.close()
 + bootstrapping helps, but it need more time to train
 ### Don't work
 + pure classition don't work, but if you do some extra works,classition maybe very useful, such as this [1thsolution](https://www.kaggle.com/c/humpback-whale-identification/discussion/82366)
-+ n-fold CV: my parteners have tried 5-fold CV, but it dont't work, maybe our ways have some problem, but i dont see n-fold CV as solution in [Kaggle Dissussion](https://www.kaggle.com/c/humpback-whale-identification/discussion)
 ### Uncertain
 + Grayscale images are not necessarily more effective than RGB
++ n-fold CV
 ## Usage
 ### Environments
 ##### Hardware requirements
-+ GTX1060, GTX1080TI better
++ GTX1060, GTX1080TI
 + 32GB Memory
 + SSD 
 #### Software requirments
